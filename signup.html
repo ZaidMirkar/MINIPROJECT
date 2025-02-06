@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up - Secured Printing System</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="signup-container">
+        <h2>Sign Up for Secured Printing System</h2>
+        <form id="signupForm" onsubmit="return validateSignup()">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">College Email:</label>
+            <input type="email" id="email" name="email" placeholder="name.rollno..branch@mhssce.ac.in" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter Password" required>
+
+            <label for="confirm-password">Confirm Password:</label>
+            <input type="password" id="confirm-password" name="confirm-password" placeholder="Confirm Password" required>
+
+            <button type="submit">Sign Up</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+        <p class="switch-page">Already have an account? <a href="login.html">Login here</a></p>
+    </div>
+    <script src="signup.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload PDF for Printing</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="stars"></div>
+    <div class="twinkling"></div>
+    <div class="upload-container">
+        <h2>Upload PDF for Printing</h2>
+        <form id="uploadForm" onsubmit="return validateUpload()">
+            <label for="name">Your Name:</label>
+            <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+            <label for="email">College Email:</label>
+            <input type="email" id="email" name="email" placeholder="name.rollno..branch@mhssce.ac.in" required>
+
+            <label for="pdf-file">Upload PDF:</label>
+            <input type="file" id="pdf-file" name="pdf-file" accept=".pdf" required>
+
+            <button type="submit">Upload and Print</button>
+        </form>
+        <p id="error-message" class="error-message"></p>
+        <p class="switch-page">Go back to <a href="login.html">Login</a> or <a href="signup.html">Sign Up</a></p>
+    </div>
+    <script src="upload.js"></script>
+</body>
+</html>
